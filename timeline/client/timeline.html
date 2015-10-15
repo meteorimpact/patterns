@@ -1,0 +1,18 @@
+<head>
+  <title>Timeline</title>
+</head>
+
+<body>
+  {{> timeline}}
+</body>
+
+<template name="timeline">
+   {{#each items}}
+      <div>Collection: {{collection}} - {{item.make}}</div>
+   {{/each}}
+
+   <p>
+      <button id="loadmore" title="Load More">Load More</button>
+   </p>
+
+</template>
